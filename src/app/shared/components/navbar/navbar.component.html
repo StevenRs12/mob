@@ -1,0 +1,13 @@
+<nav class="nav-bar">
+  <div class="nav-bar-text">
+    Bienvenido {{nameUser}}
+  </div>
+  <div class="nav-bar-text-logout" *ngIf="nameUser" >
+    <div (click)="logout()">
+      Cerrar sesión
+    </div>
+    <div (click)="editUser()">
+      Editar usuario
+    </div>
+  </div>
+</nav>

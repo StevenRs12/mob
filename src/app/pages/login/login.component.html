@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="login-title margin-5-b-t">Iniciar sesión</h1>
+    <form [formGroup]="formGroup">
+
+      <div>
+        <label class="login-label margin-5-b-t" for="name">Name</label>
+        <input class="login-input margin-5-b-t" name="name" formControlName="name" type="text" />
+      </div>
+      <div>
+        <label class="login-label margin-5-b-t" for="password">Password</label>
+        <input class="login-input margin-5-b-t" name="password" formControlName="password" type="password" />
+      </div>
+
+      <div class="margin-5-b-t">
+        <button class="login-btn margin-5-b-t" (click)="loginUser()">Enviar</button>
+      </div>
+    </form>
+</div>

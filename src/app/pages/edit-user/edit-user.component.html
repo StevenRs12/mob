@@ -1,0 +1,17 @@
+<div class="container-edit">
+
+  <h1 class="login-title margin-5-b-t">Editar usuario</h1>
+
+  <div>
+    <label class="edit-label margin-5-b-t" for="name">Nombre</label>
+    <input class="edit-input margin-5-b-t" name="name" [(ngModel)]="user.name" type="text" />
+  </div>
+  <div>
+    <label class="edit-label margin-5-b-t" for="password">Clave</label>
+    <input class="edit-input margin-5-b-t" name="password" [(ngModel)]="user.password" />
+  </div>
+
+  <div class="margin-5-b-t">
+    <button class="edit-btn margin-5-b-t" (click)="editUser()">Enviar</button>
+  </div>
+</div>
